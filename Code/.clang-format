@@ -1,6 +1,12 @@
 { 
-    BasedOnStyle: Google, 
+    BasedOnStyle: LLVM, 
     UseTab: Always, 
     IndentWidth: 4, 
-    TabWidth: 4, 
+    TabWidth: 4,  
+    AllowShortIfStatementsOnASingleLine: true, 
+    PointerAlignment: Left,
+    IndentCaseLabels: false, 
+    ColumnLimit: 0,
+    AccessModifierOffset: -4,
+    BreakConstructorInitializers: AfterColon,
 }

@@ -1,22 +1,20 @@
-#include <PPMReader.h>
-#include <Servo.h>
+#include "DriveshaftController.h"
+#include "LightController.h"
+#include "Rover.h"
 
-Servo servo;
+Rover* rover;
+ControllerInput* input;
 
 void setup() {
-	servo.attach(3);
-	pinMode(5, INPUT);
-	pinMode(6, INPUT);
-	pinMode(8, OUTPUT);
+
+	input = new ControllerInput(6, 3);
+	rover = new Rover(input, 6);
+
+	rover->addController(new DriveshaftController(5, 2, input));
+	rover->addController(new LightController(4, 5, input));
+	Serial.begin(9600);
 }
 
 void loop() {
-	int ch1 = pulseIn(5, HIGH);
-	int ch2 = pulseIn(6, HIGH);
-	servo.writeMicroseconds(ch1);
-	if (ch2 >= 1500) {
-		digitalWrite(8, HIGH);
-	} else {
-		digitalWrite(8, LOW);
-	}
+	rover->update();
 }
