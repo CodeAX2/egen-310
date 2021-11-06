@@ -22,6 +22,6 @@ int ControllerInput::getChannel(int channelID) {
 		return pulseIn(11, HIGH);
 	}
 	//reader->rawChannelValue(channelID);
-	// TODO: Change to work with PPM
+	// TODO: Change to work with PPM/setup pins for each chanel
 	return 0;
 }

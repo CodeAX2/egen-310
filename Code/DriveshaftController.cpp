@@ -9,8 +9,9 @@ DriveshaftController::DriveshaftController(int escSignalPin, int driveshaftInput
 }
 
 void DriveshaftController::update() {
-	//Serial.println(input->getChannel(driveshaftInputChannel));
 	if (rover->getCurrentDriveMode() == Rover::DriveMode::DRIVING_MODE) {
+		int inputVal = input->getChannel(driveshaftInputChannel);
+		if (abs(inputVal - 1500) <= 30) inputVal = 1500;
 		esc.writeMicroseconds(input->getChannel(driveshaftInputChannel));
 	}
 }
