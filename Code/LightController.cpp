@@ -6,6 +6,7 @@ LightController::LightController(int ledPin, int lightInputChannel, ControllerIn
 	this->ledPin = ledPin;
 	this->lightInputChannel = lightInputChannel;
 
+	// Set the pin to be output
 	pinMode(ledPin, OUTPUT);
 
 }

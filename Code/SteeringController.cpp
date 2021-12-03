@@ -9,6 +9,7 @@ SteeringController::SteeringController(int servoSignalPin, int steeringInputChan
 }
 
 void SteeringController::update() {
+	// Check that we are in driving mode
 	if (rover->getCurrentDriveMode() == Rover::DriveMode::DRIVING_MODE) {
 		int inputVal = input->getChannel(steeringInputChannel);
 		steeringServo.writeMicroseconds(inputVal);

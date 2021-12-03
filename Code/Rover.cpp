@@ -6,13 +6,16 @@ Rover::Rover(ControllerInput* input, int modeInputChannel) {
 	numControllers = 0;
 	numListeners = 0;
 
+	// Set the default mode to idle
 	mode = DriveMode::IDLE_MODE;
+
 	this->input = input;
 	this->modeInputChannel = modeInputChannel;
 }
 
 void Rover::update() {
 
+	// Set the new drive mode
 	int modeInput = input->getChannel(modeInputChannel);
 
 	DriveMode newMode = DriveMode::IDLE_MODE;
@@ -25,6 +28,7 @@ void Rover::update() {
 		newMode = DriveMode::WINCH_MODE;
 	}
 
+	// Update listeners on mode change
 	if (newMode != mode) {
 		for (int i = 0; i < numListeners; i++) {
 			listeners[i]->onDriveModeChange(mode, newMode);
@@ -32,6 +36,7 @@ void Rover::update() {
 		mode = newMode;
 	}
 
+	// Update all the controllable elements
 	for (int i = 0; i < numControllers; i++) {
 		controllers[i]->update();
 	}

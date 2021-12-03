@@ -2556,93 +2556,6 @@
 							}
 						},
 						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAF8umKNVdheW0o=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"left": 72,
-							"top": 472,
-							"width": 89,
-							"height": 77,
-							"text": "External library used to read PPM signals"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAF8umLDxNigmR0=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF8ulKPpMz+Tb4="
-							},
-							"tail": {
-								"$ref": "AAAAAAF8umKNVdheW0o="
-							},
-							"lineStyle": 1,
-							"points": "161:498;207:487"
-						},
-						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAF8umLZ1NkfnXk=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"left": 160,
-							"top": 184,
-							"width": 129,
-							"height": 64,
-							"text": "Represents input from a receiver. Ours is limited to 6 channels"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAF8umMe29lbqHM=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF8ukgom8xXHII="
-							},
-							"tail": {
-								"$ref": "AAAAAAF8umLZ1NkfnXk="
-							},
-							"lineStyle": 1,
-							"points": "231:248;243:303"
-						},
-						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAF8umM4FtoD5K0=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"left": 1408,
-							"top": 72,
-							"width": 137,
-							"height": 77,
-							"text": "Represents something that can be controlled via input from a controller"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAF8umOJptpAxOs=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF8ulybr9ALyqM="
-							},
-							"tail": {
-								"$ref": "AAAAAAF8umM4FtoD5K0="
-							},
-							"lineStyle": 1,
-							"points": "1435:149;1366:215"
-						},
-						{
 							"_type": "UMLClassView",
 							"_id": "AAAAAAF8umSDmd/jlJQ=",
 							"_parent": {
@@ -3252,35 +3165,6 @@
 							}
 						},
 						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAF8umbP4+ao+DA=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"left": 1768,
-							"top": 232,
-							"width": 129,
-							"height": 90,
-							"text": "Requires PWM signal to communicate with ESC. Higher value means faster speed"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAF8umcd8ecNnZg=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF8umaQwOU6UNU="
-							},
-							"tail": {
-								"$ref": "AAAAAAF8umbP4+ao+DA="
-							},
-							"lineStyle": 1,
-							"points": "1862:322;1917:406"
-						},
-						{
 							"_type": "UMLDependencyView",
 							"_id": "AAAAAAF8umicz+iJvTo=",
 							"_parent": {
@@ -3372,35 +3256,6 @@
 							"propertyLabel": {
 								"$ref": "AAAAAAF8umicz+iMOoE="
 							}
-						},
-						{
-							"_type": "UMLNoteView",
-							"_id": "AAAAAAF8umkE4ekSln8=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"left": 1992,
-							"top": 640,
-							"width": 153.30810546875,
-							"height": 64,
-							"text": "Requires PWM signal to communicate with servo. Value relates to rotational position"
-						},
-						{
-							"_type": "UMLNoteLinkView",
-							"_id": "AAAAAAF8ummsS+mxcyQ=",
-							"_parent": {
-								"$ref": "AAAAAAFF+qBtyKM79qY="
-							},
-							"font": "Arial;13;0",
-							"head": {
-								"$ref": "AAAAAAF8umicz+iJvTo="
-							},
-							"tail": {
-								"$ref": "AAAAAAF8umkE4ekSln8="
-							},
-							"lineStyle": 1,
-							"points": "2052:639;1985:505"
 						},
 						{
 							"_type": "UMLClassView",
